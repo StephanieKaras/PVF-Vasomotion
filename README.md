@@ -16,7 +16,7 @@ The code in this repository is associated with the following publication:
 
 **[citation here].**
 
-DOI: **[added here]**
+DOI: **[DOI here]**
 
 ## Repository Overview
 
@@ -77,9 +77,9 @@ MATLAB version used for script development and analyses: **[R2025b]**
 
 ## Input Data
 
-Most analyses use `.csv` files in a standardized format, with numeric data beginning on row 12.
+Most analyses use `.csv` files in a standardized format where row 1 contains column headers, rows 2–11 contain acquisition metadata from two-photon imaging, and numeric time-series data begin on row 12.
 
-For paired calcium and vessel diameter analyses, the standard input format is:
+For calcium and vessel diameter analyses, the standard input format is:
 
 - Column E: time
 - Column F: calcium signal (ΔF/F0)
@@ -90,7 +90,21 @@ For vessel synchrony analyses:
 - Column E: time
 - Column F onward: vessel diameter ROIs (% baseline)
 
-The circular statistics analysis uses `.xlsx` files in which each column represents a group and angular measurements are provided in degrees.
+For circular statistics analysis:
+
+- (`.xlsx`) files in which each column represents a group, with individual circular mean values from Hilbert analyses expressed in degrees.
+
+Input files should be given descriptive names to help identify and organize analysis outputs when batch processing, for example:
+
+`Animal1_Area1_ROI1.csv`
+
+Example input files demonstrating the standardized format are provided in the [`Example_Input`] folder.
+
+- [`calcium_vasomotion_example_input.csv`] – for calcium and vessel diameter analyses.
+
+- [`vessel_synchrony_example_input.csv`] – for vessel synchrony analyses.
+
+- [`circular_statistics_example_input.xlsx`] – for circular statistical analyses.
 
 ## Setup Instructions
 
@@ -98,7 +112,7 @@ The circular statistics analysis uses `.xlsx` files in which each column represe
 
 Download the repository using **Code → Download ZIP** and extract the files, or clone the repository using Git.
 
-Open the analysis scripts in MATLAB.
+Then, open the analysis scripts in MATLAB.
 
 ### 2. Specify the input directory
 
@@ -150,23 +164,17 @@ If you use these scripts or data in your research, please cite the original asso
 
 **[citation here]**
 
-## License
-
-This project/repository is distributed under the **[LICENSE NAME]**.
-
-See the `LICENSE` file for details.
-
 ## Authors
 
 **Stephanie Karas**  
 Bonney Lab  
 University of Colorado Anschutz Medical Campus
 
-Additional contributors: **[here]**
+Additional contributors: **Bonney Lab: (https://github.com/BonneyLabatCU)**
 
 ## Contact
 
 For inquiries or issues, please contact:
 
-**[Stephanie Karas]**  
-**[stephanie.karas@cuanschutz.edu]**
+**Stephanie Karas**  
+**stephanie.karas@cuanschutz.edu**
