@@ -14,9 +14,7 @@ This study investigates the relationship between perivascular fibroblast calcium
 
 The code in this repository is associated with the following publication:
 
-**[citation here].**
-
-DOI: **[DOI here]**
+DOI:(https://doi.org/10.64898/2026.09.11.751046)
 
 ## Repository Overview
 
@@ -106,6 +104,10 @@ Example input files demonstrating the standardized format are provided in the [`
 
 - [`circular_statistics_example_input.xlsx`] – for circular statistical analyses.
 
+## Test Data
+
+The `Test_Data` folder contains synthetic datasets for each MATLAB analysis script for the purpose of demonstrating and verifying code functionality. Each subfolder includes a README file describing the test inputs and their expected outputs.
+
 ## Setup Instructions
 
 ### 1. Download the repository
@@ -162,7 +164,7 @@ Output files are saved as `.csv`, `.xlsx`, and/or figure files depending on the 
 
 If you use these scripts or data in your research, please cite the original associated publication:
 
-**[citation here]**
+**[citation pending]**
 
 ## Authors
 
