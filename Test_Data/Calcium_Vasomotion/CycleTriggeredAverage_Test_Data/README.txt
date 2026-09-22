@@ -25,4 +25,4 @@ test_08_flat_diameter.csv
 Tests an essentially flat diameter signal that should not provide reliable vasomotor cycles for cycle-triggered averaging.
 
 Notes
-The full-length files are 180 seconds long and use a sampling frequency of 1.951 Hz. Numeric data begin on row 12, with time in column E, calcium in column F, and vessel diameter in column G. Diameter is percent of baseline 100.
+Full-length files are 180 seconds long and use a sampling frequency of 1.951 Hz. Numeric data begin on row 12, with time in column E, calcium in column F, and vessel diameter in column G. Diameter is percent of baseline 100.
